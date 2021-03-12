@@ -1,31 +1,38 @@
 // import React from 'react'
-// import {View,ScrollView} from 'react-native';
-// import LifeCycle from './src/pages/Lifecycle';
-// import Splashscreen from './Splashscreen'
-// import TampilanEcommerce from './TampilanEcommerce'
-// import login from './src/pages/Lifecycle';
-
-// const App = () => {
-//     return (
-//           // <login/>
-//     );
-//   }
+// import { View, Text } from 'react-native'
+// import Communication from './Communication'
+// import Dashboard from './evaluasi'
+// import Splashscreen from './splashscreen'
 
 
-// export default App;
 
-import React from 'react'
-import { View, Text } from 'react-native'
-import EvaluasiHalamanDua from './Evaluasi /evaluasi'
-import Evaluasi from './Evaluasi /Evaluasi'
-import Login from './src/pages/Lifecycle'
-import PropsDinamis from './src/pages/PropsDinamis/Index'
+// export default function App() {
+//   return (
+//     // <Login/>
+//     // <PropsDinamis />
+//     // <EvaluasiHalamanDua />
+//     // <Splashscreen />
+//     <Dashboard />
+//     // <Communication />
+//   )
+// }
 
-export default function App() {
+// In App.js in a new project
+
+import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import Stack from './src/navigation/stack';
+import MateriBelajar from './MateriBelajar';
+import Dashboard from './dashboard';
+
+function App () {
   return (
-    // <Login/>
-    // <PropsDinamis />
-    <Evaluasi />
-    // <EvaluasiHalamanDua />
+    <NavigationContainer>
+      <Stack />
+    </NavigationContainer>
+    // <MateriBelajar />
+    // <Dashboard />
   )
 }
+
+export default App;
